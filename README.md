@@ -1,4 +1,4 @@
-# Classificação de Comentários de Notícias com BERT
+# Pasta `src/`
 
 Este repositório se trata do Trabalho 2 de Inteligência Artificial que aplica o modelo **BERT** para classificar comentários de notícias em **sentimentos** (negativo, neutro e positivo), utilizando o token **[CLS]** como representação do texto.
 
@@ -6,7 +6,7 @@ A base usada é a planilha de comentários sobre a reportagem das onças, conten
 
 ---
 
-## Objetivo
+## Arquivos
 
 Treinar um modelo BERT para:
 
@@ -18,7 +18,8 @@ Treinar um modelo BERT para:
 
 ---
 
-## Estrutura de pastas
+- `utils.py`  
+  Funções auxiliares usadas no notebook. Exemplo:
 
 ```text
 data/
