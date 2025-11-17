@@ -46,14 +46,23 @@ requirements.txt            # dependências do projeto (torch, transformers, etc
 ```
 
 ## Executar no Google Colab
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/victorssanches/bert-classificacao-noticias/blob/main/notebooks/01_treinamento_bert%20(1).ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/victorssanches/bert-classificacao-noticias/blob/main/notebooks/01_treinamento_bert_final.ipynb)
 
 ## Resultados
-- **Acurácia de validação** ficou entre **0.78 e 0.82**
-- **Acurácia de teste** variou entre **0.80 e 0.83**
-- Leve **overfitting**, esperado pelo desequilíbrio das classes
-- Classes neutras tiveram melhor desempenho  
-- Classes minoritárias (positivo/ruim) mostraram menor F1-score
-> *Observação: cada tarefa foi treinada com um BERT novo, usando o mesmo pipeline genérico.*
+### Classe “onça”
+Acurácia no teste: 81.48%
+O modelo apresenta leve overfitting (loss de treino muito baixo), mas generaliza bem.
+Melhor desempenho: classe neutro
+Maior dificuldade: classe positivo
+
+### Classe “caseiro”
+Acurácia no teste: 85.78%
+Modelo mais equilibrado entre treino e validação.
+Alto desempenho para neutro e resultados sólidos para positivo/negativo.
+
+### Classe “notícia”
+Acurácia no teste: 93.34%
+Melhor modelo dos três.
+Classe neutro domina a base e é identificada com excelente precisão.
 
 
